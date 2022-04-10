@@ -7,10 +7,10 @@ namespace ScreenInformation.TestApp
         static void Main(string[] args)
         {
             //var screens = ScreenManager.GetMonitors();
-            var detailedScreens = ScreenManager.GetDetailedMonitors();
+            //var detailedScreens = ScreenManager.GetDetailedMonitors();
 
             Console.WriteLine("Screens Found:");
-            foreach (var screen in detailedScreens)
+            foreach (var screen in ScreenManager.AllScreens)
             {
                 Console.WriteLine(screen.MonitorInformation.FriendlyName);
                 Console.WriteLine(screen.MonitorInformation.Area.ToString());
